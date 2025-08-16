@@ -1,27 +1,18 @@
 # Chapter 1: Introduction to CMake
 <p align="right">
-<span >[</span>
-<span >1</span>
-<span >,</span>
-<a ref="Chapter_2">2</a>
-<span >,</span>
-<a ref="Chapter_3">3</a>
-<span >,</span>
-<a ref="Chapter_4">4</a>
-<span >,</span>
-<a ref="Chapter_5">5</a>
-<span >,</span>
-<a ref="Chapter_6">6</a>
-<span >,</span>
-<a ref="Chapter_7">7</a>
-<span >,</span>
-<a ref="Chapter_5">8</a>
-<span >,</span>
-<a ref="Chapter_9">9</a>
-<span >,</span>
-<a ref="Chapter_10">10</a>
-<span >]</span>
-<a ref="Chapter_2"><b>&nbsp;&nbsp;Next >></b></a>
+  [
+  <b>1</b>,
+  <a href="Chapter_2.md">2</a>,
+  <a href="Chapter_3.md">3</a>,
+  <a href="Chapter_4.md">4</a>,
+  <a href="Chapter_5.md">5</a>,
+  <a href="Chapter_6.md">6</a>,
+  <a href="Chapter_7.md">7</a>,
+  <a href="Chapter_8.md">8</a>,
+  <a href="Chapter_9.md">9</a>,
+  <a href="Chapter_10.md">10</a>
+  ]
+  <a href="Chapter_2.md"><b>&nbsp;&nbsp;Next >></b></a>
 </p>
 <p align="center">
     <img src="https://cmake.org/wp-content/uploads/2023/08/CMake-Mark-1.svg" alt="CMake Logo" width="60" style="vertical-align:middle;"/>
@@ -86,28 +77,18 @@ Instead of writing platform-specific build files directly, you write a **CMake c
 ---
 
 > [**Next:**](Chapter_2.md) Why CMake is better than writing Makefiles by hand.
-
 <p align="right">
-<span >[</span>
-<span >1</span>
-<span >,</span>
-<a ref="Chapter_2">2</a>
-<span >,</span>
-<a ref="Chapter_3">3</a>
-<span >,</span>
-<a ref="Chapter_4">4</a>
-<span >,</span>
-<a ref="Chapter_5">5</a>
-<span >,</span>
-<a ref="Chapter_6">6</a>
-<span >,</span>
-<a ref="Chapter_7">7</a>
-<span >,</span>
-<a ref="Chapter_5">8</a>
-<span >,</span>
-<a ref="Chapter_9">9</a>
-<span >,</span>
-<a ref="Chapter_10">10</a>
-<span >]</span>
-<a ref="Chapter_2"><b>&nbsp;&nbsp;Next >></b></a>
+  [
+  <b>1</b>,
+  <a href="Chapter_2.md">2</a>,
+  <a href="Chapter_3.md">3</a>,
+  <a href="Chapter_4.md">4</a>,
+  <a href="Chapter_5.md">5</a>,
+  <a href="Chapter_6.md">6</a>,
+  <a href="Chapter_7.md">7</a>,
+  <a href="Chapter_8.md">8</a>,
+  <a href="Chapter_9.md">9</a>,
+  <a href="Chapter_10.md">10</a>
+  ]
+  <a href="Chapter_2.md"><b>&nbsp;&nbsp;Next >></b></a>
 </p>
