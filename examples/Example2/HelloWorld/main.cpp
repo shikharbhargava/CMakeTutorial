@@ -7,7 +7,7 @@
 int main()
 {
   std::cout << Hello::getMessage() << std::endl;
-  std::cout << "2 + 3 = " << MathUtils::add(2, 3) << std::endl;
+  std::cout << "2 + 3 = " << Math::add(2, 3) << std::endl;
   Logger::logMessage("Main function executed successfully");
   return 0;
 }

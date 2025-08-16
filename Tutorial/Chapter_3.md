@@ -28,7 +28,7 @@ Let’s build our first **Hello World** project with a basic CMake project struc
 **Folder structure:**
 
 ```
-MyProject/
+Example1/
 ├── CMakeLists.txt
 │
 ├── hello/
@@ -80,12 +80,12 @@ int main()
 
 ## ⚙️ Step 2: Creating `CMakeLists.txt`
 
-At the root `MyProject/CMakeLists.txt`:
+At the root `Example1/CMakeLists.txt`:
 
 ```cmake
-# MyProject/CMakeLists.txt
+# Example1/CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
-project(MyProject)
+project(example1)
 
 # Add the hello library
 add_library(hello STATIC
@@ -96,12 +96,12 @@ add_library(hello STATIC
 target_include_directories(hello PUBLIC hello/include)
 
 # Create main executable
-add_executable(MyProject
+add_executable(example1
     main.cpp
 )
 
 # Link library to the main target
-target_link_libraries(MyProject PRIVATE hello)
+target_link_libraries(example1 PRIVATE hello)
 ```
 
 📌 This tells CMake:
@@ -109,8 +109,8 @@ target_link_libraries(MyProject PRIVATE hello)
 * Minimum required version and project name
 * Build a static library `hello` from `hello.cpp`
 * Expose the `hello/include` folder to anything linking with the library
-* Build the `MyProject` executable from `main.cpp`
-* Link the `hello` library with the `MyProject` target
+* Build the `Example1` executable from `main.cpp`
+* Link the `hello` library with the `Example1` target
 
 ---
 
@@ -140,12 +140,12 @@ cmake --build .
 ```
 -- Configuring done
 -- Generating done
--- Build files have been written to: /path/to/MyProject/build
+-- Build files have been written to: /path/to/Example1/build
 [100%] Building CXX object hello/CMakeFiles/hello.dir/src/hello.cpp.o
 [100%] Linking CXX static library libhello.a
 [100%] Built target hello
-[100%] Building CXX object CMakeFiles/MyProject.dir/main.cpp.o
-[100%] Linking CXX executable MyProject
+[100%] Building CXX object CMakeFiles/example1.dir/main.cpp.o
+[100%] Linking CXX executable example1
 ```
 
 ---

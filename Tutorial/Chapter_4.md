@@ -29,7 +29,7 @@ As projects grow, you’ll often have **multiple libraries** and separate subdir
 **Example Project Layout (with CMakeLists.txt at each level):**
 
 ```
-MyProject/
+Example2/
 ├── CMakeLists.txt
 │
 ├── hello/
@@ -60,8 +60,12 @@ MyProject/
 
 ```cpp
 // math/include/math_utils.h
-#pragma once
+#ifndef _MATH_UTILS_H_
+#define _MATH_UTILS_H_
+
 int add(int a, int b);
+
+#endif // _MATH_UTILS_H_
 ```
 
 ```cpp
@@ -75,13 +79,17 @@ int add(int a, int b)
 
 ```cpp
 // logger/include/logger.h
-#pragma once
+#ifndef _LOGGER_H_
+#define _LOGGER_H_
+
 #include <iostream>
 
 inline void logMessage(const std::string& msg)
 {
   std::cout << "[LOG] " << msg << std::endl;
 }
+
+#endif // _LOGGER_H_
 ```
 
 ```cpp
@@ -108,15 +116,15 @@ Top-level `CMakeLists.txt`:
 
 ```cmake
 cmake_minimum_required(VERSION 3.10)
-project(MyProject)
+project(example2)
 
 add_subdirectory(hello)
 add_subdirectory(math)
 add_subdirectory(logger)
 
-add_executable(MyProject main.cpp)
+add_executable(example2 main.cpp)
 
-target_link_libraries(MyProject PRIVATE hello math logger)
+target_link_libraries(example2 PRIVATE hello math logger)
 ```
 
 Library `CMakeLists.txt` inside `hello/`:
@@ -167,7 +175,7 @@ cmake --build .
 [ 25%] Built target hello
 [ 50%] Built target math
 [ 75%] Built target logger
-[100%] Built target MyProject
+[100%] Built target example2
 ```
 
 ---
