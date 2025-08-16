@@ -8,3 +8,9 @@ add_executable(example3 main.cpp)
 target_include_directories(example3 PUBLIC
     ${CMAKE_BINARY_DIR}
 )
+
+option(ENABLE_LOGGING "Enable logging support" ON)
+
+if(ENABLE_LOGGING)
+    target_compile_definitions(example3 PRIVATE ENABLE_LOGGING)
+endif()
