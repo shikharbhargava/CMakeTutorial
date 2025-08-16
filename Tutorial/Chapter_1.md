@@ -3,25 +3,25 @@
 <span >[</span>
 <span >1</span>
 <span >,</span>
-<a ref="Tutorial/Chapter_2">2</a>
+<a ref="Chapter_2">2</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_3">3</a>
+<a ref="Chapter_3">3</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_4">4</a>
+<a ref="Chapter_4">4</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_5">5</a>
+<a ref="Chapter_5">5</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_6">6</a>
+<a ref="Chapter_6">6</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_7">7</a>
+<a ref="Chapter_7">7</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_5">8</a>
+<a ref="Chapter_5">8</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_9">9</a>
+<a ref="Chapter_9">9</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_10">10</a>
+<a ref="Chapter_10">10</a>
 <span >]</span>
-<a ref="Tutorial/Chapter_2"><b>&nbsp;&nbsp;Next >></b></a>
+<a ref="Chapter_2"><b>&nbsp;&nbsp;Next >></b></a>
 </p>
 <p align="center">
     <img src="https://cmake.org/wp-content/uploads/2023/08/CMake-Mark-1.svg" alt="CMake Logo" width="60" style="vertical-align:middle;"/>
@@ -91,23 +91,23 @@ Instead of writing platform-specific build files directly, you write a **CMake c
 <span >[</span>
 <span >1</span>
 <span >,</span>
-<a ref="Tutorial/Chapter_2">2</a>
+<a ref="Chapter_2">2</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_3">3</a>
+<a ref="Chapter_3">3</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_4">4</a>
+<a ref="Chapter_4">4</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_5">5</a>
+<a ref="Chapter_5">5</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_6">6</a>
+<a ref="Chapter_6">6</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_7">7</a>
+<a ref="Chapter_7">7</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_5">8</a>
+<a ref="Chapter_5">8</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_9">9</a>
+<a ref="Chapter_9">9</a>
 <span >,</span>
-<a ref="Tutorial/Chapter_10">10</a>
+<a ref="Chapter_10">10</a>
 <span >]</span>
-<a ref="Tutorial/Chapter_2"><b>&nbsp;&nbsp;Next >></b></a>
+<a ref="Chapter_2"><b>&nbsp;&nbsp;Next >></b></a>
 </p>
