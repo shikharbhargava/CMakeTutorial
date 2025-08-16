@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(MyProject)
 
-include_directories(hello)
+add_subdirectory(hello)
 
 # Create main executable
 add_executable(MyProject
