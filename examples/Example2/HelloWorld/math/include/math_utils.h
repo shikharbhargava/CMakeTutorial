@@ -4,6 +4,6 @@
 namespace MathUtils
 {
 int add(int a, int b);
-} // namespace MATH_UTILS
+} // namespace MathUtils
 
 #endif // _MATH_UTILS_H_

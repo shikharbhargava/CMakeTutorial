@@ -1,8 +1,9 @@
 #include "hello.h"
 
-using namespace Hello;
-
-std::string getMessage()
+namespace Hello
 {
-  return "Hello, CMake!";
-}
+  std::string getMessage()
+  {
+    return "Hello, CMake!";
+  }
+} // namespace Hello

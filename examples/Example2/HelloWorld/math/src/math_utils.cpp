@@ -1,8 +1,9 @@
 #include "math_utils.h"
 
-using namespace MathUtils;
-
-int add(int a, int b)
+namespace MathUtils
 {
-  return a + b;
-}
+  int add(int a, int b)
+  {
+    return a + b;
+  }
+} // namespace MathUtils
