@@ -136,7 +136,7 @@ cmake --build .
 ## ⚙️ The CMake Build Process
 
 <p align="center">
-  <img src="cmake_process.svg" alt="CMake Build Process Diagram" width="800"/>
+  <img src="images/cmake_process.svg" alt="CMake Build Process Diagram" width="800"/>
 </p>
 
 ---
