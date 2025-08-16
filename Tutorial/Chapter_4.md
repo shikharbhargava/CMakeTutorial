@@ -12,7 +12,8 @@
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <a href="Chapter_4.md"><b>&nbsp;&nbsp;Next >></b></a>
+  <b>&nbsp;&nbsp;</b>
+  <a href="Chapter_5.md"><b>Next >></b></a>
 </p>
 <p align="right">
   [
@@ -27,5 +28,6 @@
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <a href="Chapter_4.md"><b>&nbsp;&nbsp;Next >></b></a>
+  <b>&nbsp;&nbsp;</b>
+  <a href="Chapter_5.md"><b>Next >></b></a>
 </p>

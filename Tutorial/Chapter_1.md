@@ -12,7 +12,8 @@
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <a href="Chapter_2.md"><b>&nbsp;&nbsp;Next >></b></a>
+  <b>&nbsp;&nbsp;</b>
+  <a href="Chapter_2.md"><b>Next >></b></a>
 </p>
 <p align="center">
     <img src="https://cmake.org/wp-content/uploads/2023/08/CMake-Mark-1.svg" alt="CMake Logo" width="60" style="vertical-align:middle;"/>
@@ -90,5 +91,6 @@ Instead of writing platform-specific build files directly, you write a **CMake c
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <a href="Chapter_2.md"><b>&nbsp;&nbsp;Next >></b></a>
+  <b>&nbsp;&nbsp;</b>
+  <a href="Chapter_2.md"><b>Next >></b></a>
 </p>
