@@ -1,5 +1,28 @@
 # Chapter 3: Setting Up a CMake Project
-
+<p align="right">
+<span >[</span>
+<a ref="Tutorial/Chapter_1">1</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_2">2</a>
+<span >,</span>
+<span >3</span>
+<span >,</span>
+<a ref="Tutorial/Chapter_4">4</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_5">5</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_6">6</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_7">7</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_5">8</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_9">9</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_10">10</a>
+<span >]</span>
+<a ref="Tutorial/Chapter_4"><b>&nbsp;&nbsp;Next >></b></a>
+</p>
 <p align="center">
   <img src="https://cmake.org/wp-content/uploads/2023/08/CMake-Mark-1.svg" alt="CMake Logo" width="60"/>
 </p>
@@ -193,3 +216,28 @@ cmake --build .
 ---
 
 > [**Next:**](Chapter_4.md) Adding libraries, subdirectories, and making your CMake project scale.
+<p align="right">
+<span >[</span>
+<a ref="Tutorial/Chapter_1">1</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_2">2</a>
+<span >,</span>
+<span >3</span>
+<span >,</span>
+<a ref="Tutorial/Chapter_4">4</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_5">5</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_6">6</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_7">7</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_5">8</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_9">9</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_10">10</a>
+<span >]</span>
+<a ref="Tutorial/Chapter_4"><b>&nbsp;&nbsp;Next >></b></a>
+</p>
+<p align="center">

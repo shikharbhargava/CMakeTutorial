@@ -1,5 +1,28 @@
 # Chapter 2: Why Use CMake Instead of Makefiles?
-
+<p align="right">
+<span >[</span>
+<a ref="Tutorial/Chapter_1">1</a>
+<span >,</span>
+<span >2</span>
+<span >,</span>
+<a ref="Tutorial/Chapter_3">3</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_4">4</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_5">5</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_6">6</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_7">7</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_5">8</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_9">9</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_10">10</a>
+<span >]</span>
+<a ref="Tutorial/Chapter_3"><b>&nbsp;&nbsp;Next >></b></a>
+</p>
 <p align="center">
     <img src="https://cmake.org/wp-content/uploads/2023/08/CMake-Mark-1.svg" alt="CMake Logo" width="60" style="vertical-align:middle;"/>
     <span style="display:inline-block; font-size:1.5em; font-weight:bold; margin: 0 16px; vertical-align:middle; line-height:60px;">vs</span>
@@ -81,3 +104,28 @@ For anything beyond a quick one-file test program — **CMake wins**.
 ---
 
 > [**Next:**](Chapter_3.md) Setting up your first CMake project.
+
+<p align="right">
+<span >[</span>
+<a ref="Tutorial/Chapter_1">1</a>
+<span >,</span>
+<span >2</span>
+<span >,</span>
+<a ref="Tutorial/Chapter_3">3</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_4">4</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_5">5</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_6">6</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_7">7</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_5">8</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_9">9</a>
+<span >,</span>
+<a ref="Tutorial/Chapter_10">10</a>
+<span >]</span>
+<a ref="Tutorial/Chapter_3"><b>&nbsp;&nbsp;Next >></b></a>
+</p>
