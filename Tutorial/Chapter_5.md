@@ -35,7 +35,7 @@ This makes your project **version-aware, flexible, and maintainable** as it grow
 **Example3 Folder Layout:**
 
 ```
-Example3/
+Example3/Versionization/
 ├── CMakeLists.txt
 ├── config.h.in
 └── main.cpp
@@ -75,11 +75,14 @@ It’s common to generate a header file with version info that your code can use
 Create a template file `config.h.in`:
 
 ```cpp
-#pragma once
+#ifndef _CONFIG_H_
+#define _CONFIG_H_
 
 #define PROJECT_VERSION_MAJOR @PROJECT_VERSION_MAJOR@
 #define PROJECT_VERSION_MINOR @PROJECT_VERSION_MINOR@
 #define PROJECT_VERSION_PATCH @PROJECT_VERSION_PATCH@
+
+#endif // _CONFIG_H_
 ```
 
 Update `CMakeLists.txt`:

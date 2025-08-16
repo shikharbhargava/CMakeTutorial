@@ -28,7 +28,7 @@ Let’s build our first **Hello World** project with a basic CMake project struc
 **Folder structure:**
 
 ```
-Example1/
+Example1/HelloWorld/
 ├── CMakeLists.txt
 │
 ├── hello/

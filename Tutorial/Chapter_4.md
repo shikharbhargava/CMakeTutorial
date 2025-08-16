@@ -29,7 +29,7 @@ As projects grow, you’ll often have **multiple libraries** and separate subdir
 **Example Project Layout (with CMakeLists.txt at each level):**
 
 ```
-Example2/
+Example2/HelloWorld/
 ├── CMakeLists.txt
 │
 ├── hello/
