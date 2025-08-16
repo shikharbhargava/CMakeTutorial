@@ -209,7 +209,7 @@ cmake --build .
 
 ---
 
-> [**Next:**](Chapter_4.md) Adding libraries, subdirectories, and making your CMake project scale.
+> [**Next:**](Chapter_4.md) Making your CMake project scale.
 <p align="right">
   [
   <a href="Chapter_1.md">1</a>,
