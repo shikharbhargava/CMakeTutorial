@@ -6,5 +6,5 @@
 namespace Hello
 {
 std::string getMessage();
-} // namespace Example1
+} // namespace Hello
 #endif // _HELLO_H_
