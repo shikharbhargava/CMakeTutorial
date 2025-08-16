@@ -6,16 +6,16 @@ Welcome to **CMakeTutorial** — a hands-on guide to understanding and mastering
 
 ## 📚 Chapters
 
-- [Chapter 1: Introduction to CMake](Chapter_1.md)  
+- [Chapter 1: Introduction to CMake](Tutorial/Chapter_1.md)  
   What is CMake, where is it used, and why should you learn it?
 
-- [Chapter 2: Why Use CMake Instead of Makefiles?](Chapter_2.md)  
+- [Chapter 2: Why Use CMake Instead of Makefiles?](Tutorial/Chapter_2.md)  
   CMake vs. Makefiles, advantages, and a side-by-side example.
 
-- [Chapter 3: Setting Up a CMake Project](Chapter_3.md)  
+- [Chapter 3: Setting Up a CMake Project](Tutorial/Chapter_3.md)  
   Project structure, writing `CMakeLists.txt`, and the build process.
 
-- [Chapter 4: (Coming Soon)](Chapter_4.md)  
+- [Chapter 4: (Coming Soon)](Tutorial/Chapter_4.md)  
   Advanced topics: libraries, subdirectories, scaling up your project.
 
 ---
