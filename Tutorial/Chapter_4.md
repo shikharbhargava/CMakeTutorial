@@ -1,4 +1,4 @@
-# Chapter 4: Libraries, subdirectories, and making CMake project scale.
+# Chapter 4: Making CMake project scale.
 <p align="right">
   [
   <a href="Chapter_1.md">1</a>,
