@@ -1,13 +1,20 @@
 cmake_minimum_required(VERSION 3.10)
 # Compiler flags
-include(cmake/CompilerFlags.cmake)
+if (UNIX)
+  include(cmake/CompilerFlags.cmake)
+endif()
 
 project(Render)
 
 if(DEFINED ENV{OPENCV_INSTALL})
   set(OPENCV_PATH $ENV{OPENCV_INSTALL})
   message(STATUS "Found OPENCV PATH from environment variable OPENCV_INSTALL: " ${OPENCV_PATH})
-  set(OpenCV_DIR "${OPENCV_PATH}/lib/cmake/opencv4")
+  # if linux
+  if(UNIX)
+    set(OpenCV_DIR "${OPENCV_PATH}/lib/cmake/opencv4")
+  else()
+    set(OpenCV_DIR "${OPENCV_PATH}/build")
+  endif()
 endif()
 
 find_package(OpenCV REQUIRED)
