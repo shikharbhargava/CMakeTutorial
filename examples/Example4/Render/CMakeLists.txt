@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
+# Compiler flags
+include(cmake/CompilerFlags.cmake)
+
 project(Render)
 
 if(DEFINED ENV{OPENCV_INSTALL})
