@@ -6,6 +6,7 @@ namespace render
 {
   void display_images(const std::vector<std::string> &image_paths)
   {
+    cv::namedWindow("Render", cv::WINDOW_NORMAL);
     for (const auto &path : image_paths)
     {
       cv::Mat img = cv::imread(path);
@@ -23,5 +24,6 @@ namespace render
       cv::imshow("Render", img);
       cv::waitKey(0);
     }
+    cv::destroyAllWindows();
   }
 }
