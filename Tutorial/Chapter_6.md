@@ -175,7 +175,135 @@ Example4/Render
 * Internal header-only libraries (nlohmann/json)
 * Feature toggles via compile-time macros
 
-We will use this project as a reference in later chapters.
+---
+
+## ⚙️ Top-level `CMakeLists.txt`
+
+```cmake
+cmake_minimum_required(VERSION 3.10)
+project(Render)
+
+find_package(OpenCV REQUIRED)
+
+# Option to enable BLACK_AND_WHITE mode
+option(BLACK_AND_WHITE "Render images in grayscale" OFF)
+
+add_subdirectory(render)
+add_subdirectory(json)
+
+add_executable(Render main.cpp)
+
+target_link_libraries(Render PRIVATE render json ${OpenCV_LIBS})
+
+if(BLACK_AND_WHITE)
+    target_compile_definitions(render PUBLIC BLACK_AND_WHITE)
+endif()
+```
+
+---
+
+## ⚙️ `render/CMakeLists.txt`
+
+```cmake
+add_library(render src/render.cpp)
+
+target_include_directories(render PUBLIC include ${OpenCV_INCLUDE_DIRS})
+```
+
+---
+
+## ⚙️ `json/CMakeLists.txt`
+
+```cmake
+add_library(json INTERFACE)
+
+target_include_directories(json INTERFACE include)
+```
+
+---
+
+## 📄 `render/include/render.h`
+
+```cpp
+#pragma once
+#include <string>
+#include <vector>
+
+namespace render {
+    void display_images(const std::vector<std::string>& image_paths);
+}
+```
+
+---
+
+## 📄 `render/src/render.cpp`
+
+```cpp
+#include "render.h"
+#include <opencv2/opencv.hpp>
+#include <iostream>
+
+namespace render {
+    void display_images(const std::vector<std::string>& image_paths) {
+        for (const auto& path : image_paths) {
+            cv::Mat img = cv::imread(path);
+            if (img.empty()) {
+                std::cerr << "Failed to load: " << path << std::endl;
+                continue;
+            }
+
+#ifdef BLACK_AND_WHITE
+            cv::cvtColor(img, img, cv::COLOR_BGR2GRAY);
+#endif
+
+            cv::imshow("Render", img);
+            cv::waitKey(0);
+        }
+    }
+}
+```
+
+---
+
+## 📄 `main.cpp`
+
+```cpp
+#include <iostream>
+#include <fstream>
+#include <nlohmann/json.hpp>
+#include "render.h"
+
+int main(int argc, char** argv) {
+    if (argc < 2) {
+        std::cerr << "Usage: Render <images.json>" << std::endl;
+        return 1;
+    }
+
+    std::ifstream file(argv[1]);
+    if (!file.is_open()) {
+        std::cerr << "Could not open file: " << argv[1] << std::endl;
+        return 1;
+    }
+
+    nlohmann::json j;
+    file >> j;
+
+    std::vector<std::string> image_paths = j["images"].get<std::vector<std::string>>();
+
+    render::display_images(image_paths);
+
+    return 0;
+}
+```
+
+---
+
+✅ This example ties everything together:
+
+* `render` library handles image display
+* `json` is a bundled header-only dependency
+* `main.cpp` glues them together
+* The compile-time macro `BLACK_AND_WHITE` toggles grayscale rendering
 
 ---
 

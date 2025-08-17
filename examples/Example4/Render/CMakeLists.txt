@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.10)
+project(Render)
+
+if(DEFINED ENV{OPENCV_INSTALL})
+  set(OPENCV_PATH $ENV{OPENCV_INSTALL})
+  message(STATUS "Found OPENCV PATH from environment variable OPENCV_INSTALL: " ${OPENCV_PATH})
+  set(OpenCV_DIR "${OPENCV_PATH}/lib/cmake/opencv4")
+endif()
+
+find_package(OpenCV REQUIRED)
+
+# Option to enable BLACK_AND_WHITE mode
+option(BLACK_AND_WHITE "Render images in grayscale" OFF)
+
+add_subdirectory(ArgParser)
+add_subdirectory(render)
+add_subdirectory(json)
+
+add_executable(Render main.cpp)
+
+target_link_libraries(Render PRIVATE ArgParser render json ${OpenCV_LIBS})
+
+if(BLACK_AND_WHITE)
+    target_compile_definitions(render PUBLIC BLACK_AND_WHITE)
+endif()
