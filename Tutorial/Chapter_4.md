@@ -1,5 +1,7 @@
 # Chapter 4: Making CMake project scale.
 <p align="right">
+  <a href="Chapter_3.md"><b><< Previous</b></a>
+  <b>&nbsp;</b>
   [
   <a href="Chapter_1.md">1</a>,
   <a href="Chapter_2.md">2</a>,
@@ -12,7 +14,7 @@
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <b>&nbsp;&nbsp;</b>
+  <b>&nbsp;</b>
   <a href="Chapter_5.md"><b>Next >></b></a>
 </p>
 
@@ -201,6 +203,8 @@ cmake --build .
 > [**Next:**](Chapter_5.md) Project Configuration and Versioning
 
 <p align="right">
+  <a href="Chapter_3.md"><b><< Previous</b></a>
+  <b>&nbsp;</b>
   [
   <a href="Chapter_1.md">1</a>,
   <a href="Chapter_2.md">2</a>,
@@ -213,6 +217,6 @@ cmake --build .
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <b>&nbsp;&nbsp;</b>
+  <b>&nbsp;</b>
   <a href="Chapter_5.md"><b>Next >></b></a>
 </p>

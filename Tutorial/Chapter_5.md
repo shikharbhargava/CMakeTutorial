@@ -1,5 +1,7 @@
 # Chapter 5: Project Configuration and Versioning
 <p align="right">
+  <a href="Chapter_4.md"><b><< Previous</b></a>
+  <b>&nbsp;</b>
   [
   <a href="Chapter_1.md">1</a>,
   <a href="Chapter_2.md">2</a>,
@@ -12,7 +14,7 @@
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <b>&nbsp;&nbsp;</b>
+  <b>&nbsp;</b>
   <a href="Chapter_6.md"><b>Next >></b></a>
 </p>
 <p align="center">
@@ -193,6 +195,8 @@ When building `example3`, you may see output like this:
 
 > [**Next:**](Chapter_6.md) Optional Features and Testing
 <p align="right">
+  <a href="Chapter_4.md"><b><< Previous</b></a>
+  <b>&nbsp;</b>
   [
   <a href="Chapter_1.md">1</a>,
   <a href="Chapter_2.md">2</a>,
@@ -205,6 +209,6 @@ When building `example3`, you may see output like this:
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <b>&nbsp;&nbsp;</b>
-  <a href="Chapter_6.md"><b>Next >></b></a>
+  <b>&nbsp;</b>
+  <a href="Chapter_6.md">Finding and linking external dependencies<b>Next >></b></a>
 </p>

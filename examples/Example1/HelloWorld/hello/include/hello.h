@@ -5,6 +5,6 @@
 
 namespace Hello
 {
-std::string getMessage();
+  std::string getMessage();
 } // namespace Hello
 #endif // _HELLO_H_

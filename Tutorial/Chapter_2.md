@@ -1,5 +1,7 @@
 # Chapter 2: Why Use CMake Instead of Makefiles?
 <p align="right">
+  <a href="Chapter_1.md"><b><< Previous</b></a>
+  <b>&nbsp;</b>
   [
   <a href="Chapter_1.md">1</a>,
   <b>2</b>,
@@ -12,7 +14,7 @@
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <b>&nbsp;&nbsp;</b>
+  <b>&nbsp;</b>
   <a href="Chapter_3.md"><b>Next >></b></a>
 </p>
 <p align="center">
@@ -97,6 +99,8 @@ For anything beyond a quick one-file test program — **CMake wins**.
 
 > [**Next:**](Chapter_3.md) Setting up your first CMake project.
 <p align="right">
+  <a href="Chapter_1.md"><b><< Previous</b></a>
+  <b>&nbsp;</b>
   [
   <a href="Chapter_1.md">1</a>,
   <b>2</b>,
@@ -109,6 +113,6 @@ For anything beyond a quick one-file test program — **CMake wins**.
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <b>&nbsp;&nbsp;</b>
+  <b>&nbsp;</b>
   <a href="Chapter_3.md"><b>Next >></b></a>
 </p>

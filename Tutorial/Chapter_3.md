@@ -1,5 +1,7 @@
 # Chapter 3: Setting Up a CMake Project
 <p align="right">
+  <a href="Chapter_2.md"><b><< Previous</b></a>
+  <b>&nbsp;</b>
   [
   <a href="Chapter_1.md">1</a>,
   <a href="Chapter_2.md">2</a>,
@@ -12,7 +14,7 @@
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <b>&nbsp;&nbsp;</b>
+  <b>&nbsp;</b>
   <a href="Chapter_4.md"><b>Next >></b></a>
 </p>
 <p align="center">
@@ -23,7 +25,7 @@
 
 ## 📂 Step 1: Creating CMake Project
 
-Let’s build our first **Hello World** project with a basic CMake project structure, introducing a separate library for better organization.
+Let’s build our first **Hello World** project with a basic CMake project structure.
 
 **Folder structure:**
 
@@ -50,7 +52,10 @@ Example1/HelloWorld/
 #define _HELLO_H_
 #include <string>
 
-std::string getMessage();
+namespace Hello
+{
+  std::string getMessage();
+} // namespace Hello
 #endif // _HELLO_H_
 ```
 
@@ -58,10 +63,13 @@ std::string getMessage();
 // hello/src/hello.cpp
 #include "hello.h"
 
-std::string getMessage()
+namespace Hello
 {
-  return "Hello, CMake!";
-}
+  std::string getMessage()
+  {
+    return "Hello, CMake!";
+  }
+} // namespace Hello
 ```
 
 ```cpp
@@ -71,7 +79,7 @@ std::string getMessage()
 
 int main()
 {
-  std::cout << getMessage() << std::endl;
+  std::cout << Hello::getMessage() << std::endl;
   return 0;
 }
 ```
@@ -80,37 +88,26 @@ int main()
 
 ## ⚙️ Step 2: Creating `CMakeLists.txt`
 
-At the root `Example1/CMakeLists.txt`:
+At the root `Example1/HelloWorld/CMakeLists.txt`:
 
 ```cmake
-# Example1/CMakeLists.txt
+# Example1/HelloWorld/CMakeLists.txt
 cmake_minimum_required(VERSION 3.10)
 project(example1)
-
-# Add the hello library
-add_library(hello STATIC
-    hello/src/hello.cpp
-)
-
-# Specify include directory for the library
-target_include_directories(hello PUBLIC hello/include)
 
 # Create main executable
 add_executable(example1
     main.cpp
+    hello/src/hello.cpp
 )
-
-# Link library to the main target
-target_link_libraries(example1 PRIVATE hello)
+target_include_directories(example1 PUBLIC hello/include)
 ```
 
 📌 This tells CMake:
 
-* Minimum required version and project name
-* Build a static library `hello` from `hello.cpp`
-* Expose the `hello/include` folder to anything linking with the library
-* Build the `Example1` executable from `main.cpp`
-* Link the `hello` library with the `Example1` target
+* Minimum required version and project name `example1`
+* Build the `example1` executable from `main.cpp` and `hello/src/hello.cpp`
+* Include the `hello/include` folder in the target `example1`
 
 ---
 
@@ -119,8 +116,9 @@ target_link_libraries(example1 PRIVATE hello)
 From your project root:
 
 ```bash
+cd Example1
 mkdir build && cd build
-cmake ..
+cmake ../HelloWorld
 cmake --build .
 ```
 
@@ -132,8 +130,10 @@ cmake --build .
 
 ### 🔍 What’s Happening?
 
-1. **`cmake ..`** → Configures the project and generates native build files (Makefile, Ninja, etc.).
+1. **`cmake ../HelloWorld`** → Configures the project and generates native build files (Makefile, Ninja, etc.).
 2. **`cmake --build .`** → Invokes the selected build tool automatically.
+
+**Note:** `cmake-gui .` or `ccmake .` commands can be used to view and configure advance configurations
 
 📷 *Example build output*:
 
@@ -211,6 +211,8 @@ cmake --build .
 
 > [**Next:**](Chapter_4.md) Making your CMake project scale.
 <p align="right">
+  <a href="Chapter_2.md"><b><< Previous</b></a>
+  <b>&nbsp;</b>
   [
   <a href="Chapter_1.md">1</a>,
   <a href="Chapter_2.md">2</a>,
@@ -223,6 +225,6 @@ cmake --build .
   <a href="Chapter_9.md">9</a>,
   <a href="Chapter_10.md">10</a>
   ]
-  <b>&nbsp;&nbsp;</b>
+  <b>&nbsp;</b>
   <a href="Chapter_4.md"><b>Next >></b></a>
 </p>
