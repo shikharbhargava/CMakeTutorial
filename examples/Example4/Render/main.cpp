@@ -1,11 +1,14 @@
 #include <iostream>
 #include <fstream>
 #include <nlohmann/json.hpp>
+#include <string>
+
 #include "render.h"
 #include "ArgParser.h"
 
-int main(int argc, char **argv)
+int main(int argc, const char **argv)
 {
+  Arguments::ArgParser parser;
   std::string inputPath;
   try
   {
@@ -23,7 +26,7 @@ int main(int argc, char **argv)
   std::ifstream file(inputPath);
   if (!file.is_open())
   {
-    std::cerr << "Could not open file: " << argv[1] << std::endl;
+    std::cerr << "Could not open file: " << inputPath << std::endl;
     return 1;
   }
 

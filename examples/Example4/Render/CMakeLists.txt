@@ -18,10 +18,11 @@ option(BLACK_AND_WHITE "Render images in grayscale" OFF)
 add_subdirectory(ArgParser)
 add_subdirectory(render)
 add_subdirectory(json)
+add_subdirectory(utils)
 
 add_executable(Render main.cpp)
 
-target_link_libraries(Render PRIVATE ArgParser render json ${OpenCV_LIBS})
+target_link_libraries(Render PRIVATE utils ArgParser render json ${OpenCV_LIBS})
 
 if(BLACK_AND_WHITE)
     target_compile_definitions(render PUBLIC BLACK_AND_WHITE)
