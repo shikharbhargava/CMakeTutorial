@@ -137,6 +137,48 @@ CMake will search this path when looking for config files.
 
 ---
 
+## 📂 Step 7: Example4 — Render Project
+
+To make things concrete, let’s design **Example4: Render**.
+
+**Folder Layout:**
+
+```
+Example4/Render
+├── CMakeLists.txt
+├── render/
+│   ├── CMakeLists.txt
+│   ├── include/
+│   │   └── render.h
+│   └── src/
+│       └── render.cpp
+├── json/
+│   ├── CMakeLists.txt
+│   └── include/
+│       └── nlohmann/json.hpp   (header-only library)
+└── main.cpp
+```
+
+**Project Features:**
+
+* Library `render` that uses **OpenCV** to display images.
+* Header-only library `json` using **nlohmann/json** bundled in the project.
+* `main.cpp` reads a JSON file containing a list of image paths, then calls `render`.
+* A **compile-time macro** `BLACK_AND_WHITE`:
+
+  * Controlled via `option(BLACK_AND_WHITE ...)` in CMake.
+  * If set, the render library converts images to grayscale before displaying.
+
+👉 This example shows how to combine:
+
+* External dependencies (OpenCV)
+* Internal header-only libraries (nlohmann/json)
+* Feature toggles via compile-time macros
+
+We will use this project as a reference in later chapters.
+
+---
+
 > [**Next:**](Chapter_7.md) Installing the Project
 <p align="right">
   <a href="Chapter_5.md"><b><< Previous</b></a>
