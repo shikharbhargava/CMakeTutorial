@@ -19,6 +19,7 @@ namespace render
       cv::cvtColor(img, img, cv::COLOR_BGR2GRAY);
 #endif
 
+      cv::setWindowTitle("Render", path);
       cv::imshow("Render", img);
       cv::waitKey(0);
     }
