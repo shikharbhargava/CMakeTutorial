@@ -209,7 +209,7 @@ cmake --build .
 
 ---
 
-> [**Next:**](Chapter_4.md) Making your CMake project scale.
+> ➡️ [**Next:**](Chapter_4.md) Chapter 4: Making your CMake project scale.
 <p align="right">
   <a href="Chapter_2.md"><b><< Previous</b></a>
   <b>&nbsp;</b>

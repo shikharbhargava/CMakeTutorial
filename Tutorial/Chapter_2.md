@@ -97,7 +97,7 @@ For anything beyond a quick one-file test program — **CMake wins**.
 
 ---
 
-> [**Next:**](Chapter_3.md) Setting up your first CMake project.
+> ➡️ [**Next:**](Chapter_3.md) Chapter 3: Setting up your first CMake project.
 <p align="right">
   <a href="Chapter_1.md"><b><< Previous</b></a>
   <b>&nbsp;</b>

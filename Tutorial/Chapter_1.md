@@ -77,7 +77,7 @@ Instead of writing platform-specific build files directly, you write a **CMake c
 
 ---
 
-> [**Next:**](Chapter_2.md) Why CMake is better than writing Makefiles by hand.
+> ➡️ [**Next:**](Chapter_2.md) Chapter 2: Why CMake is better than writing Makefiles by hand.
 <p align="right">
   [
   <b>1</b>,

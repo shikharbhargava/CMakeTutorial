@@ -200,7 +200,7 @@ cmake --build .
 
 ---
 
-> [**Next:**](Chapter_5.md) Project Configuration and Versioning
+> ➡️ [**Next:**](Chapter_5.md) Chapter 5: Project Configuration and Versioning
 
 <p align="right">
   <a href="Chapter_3.md"><b><< Previous</b></a>

@@ -330,7 +330,7 @@ make
 
 ---
 
-> [**Next:**](Chapter_7.md) Installing the Project
+> ➡️ [**Next:**](Chapter_7.md) Chapter 7: Installing the Project
 <p align="right">
   <a href="Chapter_5.md"><b><< Previous</b></a>
   <b>&nbsp;</b>

@@ -193,7 +193,7 @@ When building `example3`, you may see output like this:
 
 ---
 
-> [**Next:**](Chapter_6.md) Optional Features and Testing
+> ➡️ [**Next:**](Chapter_6.md) Chapter 6: Optional Features and Testing
 <p align="right">
   <a href="Chapter_4.md"><b><< Previous</b></a>
   <b>&nbsp;</b>
