@@ -297,6 +297,29 @@ int main(int argc, char** argv) {
 ```
 
 ---
+## 📄 images.json (sample input)
+
+```json
+{
+  "images": [
+    "image1.jpg",
+    "image2.jpg",
+    "image3.png"
+  ]
+}
+```
+
+---
+
+## 🛠️ Build and Run Example
+```
+mkdir build && cd build
+cmake .. -DBLACK_AND_WHITE=ON
+make
+./Render ../images.json
+```
+
+---
 
 ✅ This example ties everything together:
 
